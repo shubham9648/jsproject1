@@ -1,4 +1,4 @@
-console.log("hey this is ankit");
+
 const colors = ["red","green","grey","cyan","purple","orange","blue","brown","black"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
