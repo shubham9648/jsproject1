@@ -1,65 +1,102 @@
-*{
+body{
+   
     padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+    margin: 0em;
+   font-family: sans-serif;
+    background-color: white ;
     
 }
 .nav-center{
-     background-color: purple;
-    color: white;
-    height: 6vw;
-    font-size: 3vw;
-    display: flex;
-    align-items: center;
-    padding: 0 2vw;
+    width: 100%;
+   display: flex; 
+   flex-direction: row;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   justify-items: auto;
+   border: 2px solid blue;
+   border: none;
+   background-color: red;
     font-family: 'Scheherazade New', serif;
 }
-ul{
-    float: right;
-    list-style-type: none;
-   
+h1{
+    font-size: 2.5rem;
 }
-ul li{
+.nav-links{
+    width: 50%;
+    flex: 1;
+    text-align: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul li {
+    list-style: none;
     display: inline-block;
-    
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
 }
-h3{
-    padding: 6vw;
-    
-}
- ul li a{
+ul li a{
     text-decoration: none;
-  color: white;
-  position: relative;
-  left: 40vw;
- 
-  
-    list-style-type: none;
-   
+    color: white;
+    font-size: 1.8rem;
+}
+ul li a:hover{
+    color: greenyellow;
 }
 .container{
-   position: relative;
-   top: 13vw;
-   left: 35vw;
-   
+  display: flex;
+    height: 20rem;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid blue;
+    border: none;
 }
 h2{
-    border: 1vh solid rgb(223, 25, 180);
-    font-size: 5vh;
-    padding: 3vh;
-    
-    background-color: rgb(27, 49, 148);
-    border-radius: 3vh;
-    margin-right: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    border: 2px solid red;
+    border: none;
+    background-color: aquamarine;
 }
-.color{
-    margin: 20vh;
+.btn-hero{
+    font-size: 1.4rem;
+    color: white;
+    background-color: red;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-hero:hover{
+    color: green;
+    background-color: yellow;
+}
 
-}
-#btn{
-    font-size: 4vh;
-    margin-left: 15vw;
-    margin-top: 2vh;
-    background-color: rgb(16, 118, 150);
-    border-radius: 10px;
+@media screen and (max-width:480px){
+    h1{
+        font-size: 2rem;
+    }
+    ul li{
+        margin-top: 1rem;
+    }
+    ul li  a{
+        
+        font-size: 1.2rem;
+  
+    }
+    h2{   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        font-size: 2rem;
+        width: 60%;
+        border: 2px solid blue;
+        border: none;
+        background-color: rgb(206, 228, 86);
+        border-radius: 8px;
+    }
 }
